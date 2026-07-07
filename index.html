@@ -278,11 +278,12 @@
       position: absolute; inset: 0; z-index: 0;
       background: url('2.2.2_2.2.2.jpg') center / cover no-repeat;
     }
+    .pitch { min-height: 560px; display: flex; align-items: center; }
     .sauna-pitch { margin-top: 2px; background-color: #0a190a; }
     .sauna-pitch .pitch-bg {
       background-image: url('sauna-bg.png');
       background-position: center center;
-      background-size: 130%;
+      background-size: cover;
       background-repeat: no-repeat;
       background-color: #0a190a;
     }
@@ -814,8 +815,11 @@
 
       <!-- SAUNA -->
       <div class="plan-panel" id="tab-sauna">
-        <div class="plan-hero-photo reveal">
-          <img src="IMG_8350.JPG" alt="テントサウナ">
+        <div class="plan-hero-photo two-img reveal">
+          <div class="plan-hero-two">
+            <img src="IMG_8350.JPG" alt="テントサウナ">
+            <img src="sauna-stove.jpg" alt="薪コンロ">
+          </div>
           <div class="plan-hero-photo-label">SAUNA PLAN — テントサウナ × 天然水風呂 × 外気浴</div>
         </div>
         <p class="plan-desc reveal">森と川に囲まれた自然空間で、ゆっくり3時間サウナをお楽しみいただけます。サウナの後は清流へ。人工の水風呂では味わえない自然の冷たさを体感できます。</p>
