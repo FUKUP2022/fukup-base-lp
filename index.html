@@ -551,6 +551,10 @@
     }
     .usage-title { font-size: 14px; font-weight: 700; color: var(--green); margin-bottom: 10px; letter-spacing: 0.04em; }
     .usage-text { font-size: 14px; color: var(--text-mid); line-height: 1.9; }
+    .usage-item:last-child:nth-child(odd) {
+      border: 1px solid var(--cream-dark); border-radius: 2px;
+      margin: 12px;
+    }
     @media (min-width: 640px) {
       .usage-grid { grid-template-columns: repeat(2, 1fr); }
       .usage-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
@@ -1003,7 +1007,7 @@
       </div>
       <div class="usage-item reveal">
         <div class="usage-title">お支払い方法</div>
-        <p class="usage-text">現金・クレジットカード・QRコード決済（PayPay等）がご利用いただけます。</p>
+        <p class="usage-text">現金・クレジットカード・QRコード決済（PayPay等）が<br>ご利用いただけます。</p>
       </div>
     </div>
   </div>
