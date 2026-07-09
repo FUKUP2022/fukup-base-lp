@@ -553,6 +553,7 @@
     .usage-text { font-size: 14px; color: var(--text-mid); line-height: 1.9; }
     @media (min-width: 640px) {
       .usage-grid { grid-template-columns: repeat(2, 1fr); }
+      .usage-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
     }
 
     /* ==================== ACCESS ==================== */
