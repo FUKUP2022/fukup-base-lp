@@ -460,19 +460,20 @@
     .plan-cta { text-align: center; margin-top: 48px; }
 
     .bbq-cards-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
+      display: grid; grid-template-columns: 1fr;
       gap: 16px; margin-bottom: 28px;
     }
-    .bbq-card { border: 1px solid var(--cream-dark); border-radius: 2px; overflow: hidden; display: flex; flex-direction: column; }
+    .bbq-card { border: 1px solid var(--cream-dark); border-radius: 2px; overflow: hidden; }
     .bbq-card-head { padding: 20px; color: var(--white); text-align: center; min-height: 88px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
     .bbq-card-head.tebura { background: linear-gradient(135deg, #5a3a1e, #8a6040); }
     .bbq-card-head.mochikomi { background: linear-gradient(135deg, #2a3a2a, #4a6050); }
     .bbq-card-head-name { font-family: 'Noto Serif JP', serif; font-size: 16px; font-weight: 600; margin-bottom: 4px; }
     .bbq-card-head-sub { font-size: 11px; opacity: 0.7; letter-spacing: 0.1em; }
-    .bbq-card-body { padding: 20px; text-align: center; flex: 1; }
-    .bbq-card-price { font-family: 'Noto Serif JP', "Yu Mincho", serif; font-size: 30px; color: var(--green); font-weight: 600; letter-spacing: 0.02em; line-height: 1; }
-    .bbq-card-unit { font-size: 12px; color: var(--text-light); margin-bottom: 12px; margin-top: 4px; }
-    .bbq-card-desc { font-size: 13px; color: var(--text-mid); line-height: 1.8; }
+    .bbq-card-body { padding: 24px 20px; }
+    .bbq-card-desc { font-size: 13px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; }
+    .bbq-section-label { font-size: 13px; font-weight: 700; color: var(--green); margin-bottom: 8px; }
+    .bbq-section-label.spaced { margin-top: 20px; }
+    .bbq-list { font-size: 14px; color: var(--text-mid); line-height: 1.9; }
 
     .note { font-size: 13px; color: var(--text-light); line-height: 1.9; padding: 14px 18px; border-left: 2px solid var(--gold); background: var(--cream-dark); margin-bottom: 12px; }
 
@@ -887,9 +888,25 @@
               <div class="bbq-card-head-sub">食材・機材すべて込み</div>
             </div>
             <div class="bbq-card-body">
-              <div class="bbq-card-price">¥4,000</div>
-              <div class="bbq-card-unit">1名様 / 3時間制</div>
               <p class="bbq-card-desc">食材・機材の準備不要。手ぶらでそのままお越しください。</p>
+              <p class="bbq-section-label">料金</p>
+              <p class="bbq-list">
+                ・1名　4,000円<br>
+                ・中学生以下 1名　2,500円<br>
+                ・未就学児　無料
+              </p>
+              <p class="bbq-section-label spaced">食材内容</p>
+              <p class="bbq-list">
+                ・牛カルビ<br>
+                ・豚バラ<br>
+                ・鶏もも<br>
+                ・季節の野菜3種
+              </p>
+              <p class="bbq-section-label spaced">追加オプション</p>
+              <p class="bbq-list">
+                ・焼きそばセット：1セット1,000円<br>
+                ・1セット約3人前
+              </p>
             </div>
           </div>
           <div class="bbq-card">
@@ -898,9 +915,13 @@
               <div class="bbq-card-head-sub">機材込み・食材持参</div>
             </div>
             <div class="bbq-card-body">
-              <div class="bbq-card-price">¥3,000</div>
-              <div class="bbq-card-unit">1名様 / 3時間制</div>
               <p class="bbq-card-desc">食材・飲み物を持ち込んで自由にお楽しみいただけます。</p>
+              <p class="bbq-section-label">料金</p>
+              <p class="bbq-list">
+                ・1名　3,000円<br>
+                ・中学生以下 1名　1,500円<br>
+                ・未就学児　無料
+              </p>
             </div>
           </div>
         </div>
