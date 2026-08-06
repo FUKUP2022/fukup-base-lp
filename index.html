@@ -447,6 +447,12 @@
     .addon-box-title { font-size: 13px; color: var(--text-light); }
     .addon-box-price { font-family: 'Noto Serif JP', serif; font-size: 24px; font-weight: 600; color: var(--green); }
     .addon-box-unit { font-size: 13px; color: var(--text-light); }
+    @media (max-width: 480px) {
+      .addon-box { gap: 8px; padding: 16px 18px; flex-wrap: nowrap; }
+      .addon-box-title { font-size: 11px; white-space: nowrap; }
+      .addon-box-price { font-size: 19px; }
+      .addon-box-unit { font-size: 11px; white-space: nowrap; }
+    }
 
     .rental-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
     .rental-item {
@@ -862,9 +868,9 @@
         <p style="font-size:13px;font-weight:700;color:var(--green);margin-bottom:14px;" class="reveal">サウナのお持ち物</p>
         <p class="bbq-list reveal" style="margin-bottom:28px;">
           ・水着<br>
-          <span style="font-size:12px;color:var(--text-light);">　※屋外で男女共同で利用するため、水着の着用は必須となります</span><br>
+          <span style="font-size:12px;color:var(--text-light);">　※屋外で男女共同で利用するため、水着の着用は必須<br>となります</span><br>
           ・サンダル<br>
-          <span style="font-size:12px;color:var(--text-light);">　※岩場を歩くため、かかと付きのサンダルをおすすめしております</span><br>
+          <span style="font-size:12px;color:var(--text-light);">　※岩場を歩くため、かかと付きのサンダルをおすすめ<br>しております</span><br>
           ・バスタオル
         </p>
 
