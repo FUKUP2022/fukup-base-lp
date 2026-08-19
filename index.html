@@ -524,7 +524,7 @@
     .facility-item { position: relative; overflow: hidden; scroll-margin-top: 100px; }
     .facility-photo { height: 280px; overflow: hidden; }
     .facility-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-    .facility-photo.two-img { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; height: 420px; }
+    .facility-photo.two-img { display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; gap: 2px; height: 420px; }
     .facility-item:hover .facility-photo img { transform: scale(1.04); }
     .facility-text { padding: 24px 0; }
     .facility-name {
@@ -1021,10 +1021,13 @@
         </div>
       </div>
       <div class="facility-item reveal reveal-d2">
-        <div class="facility-photo"><img src="parking.jpg" alt="駐車場" loading="lazy"></div>
+        <div class="facility-photo two-img">
+          <img src="parking.jpg" alt="駐車場" loading="lazy">
+          <img src="restroom.jpg" alt="トイレ" loading="lazy">
+        </div>
         <div class="facility-text">
-          <div class="facility-name">駐車場</div>
-          <p class="facility-desc">無料駐車場を完備。56台まで駐車可能なので、団体・大人数でのご利用でも安心です。</p>
+          <div class="facility-name">駐車場・トイレ</div>
+          <p class="facility-desc">無料駐車場を完備。56台まで駐車可能なので、団体・大人数でのご利用でも安心です。清潔なトイレもご用意していますので、快適にお過ごしいただけます。</p>
         </div>
       </div>
     </div>
